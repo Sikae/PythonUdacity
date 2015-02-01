@@ -8,11 +8,12 @@ class Multimedia:
     '''
     Main class for Movie, Song and VideoGame
     '''
-    def __init__(self, duration):
+    def __init__(self, duration, name):
         '''
         Constructor
         '''
         self.__duration = duration
+        self.__name = name
 
     def getter_duration(self):
         return self.__duration
@@ -30,20 +31,21 @@ class Video(Multimedia):
     """
     TODO: ...
     """
-    def __init__(self, duration):
-        Multimedia.__init__(self, duration)
+    def __init__(self, duration, name):
+        Multimedia.__init__(self, duration, name)
     
 
 class Movie(Multimedia):
     """
     TODO: ...
     """
-    def __init__(self, duration):
-        Multimedia.__init__(self, duration)
+    def __init__(self, duration, name):
+        Multimedia.__init__(self, duration, name)
     
 class Song(Multimedia):
     """
     TODO: ...
     """
-    def __init__(self, duration):
-        Multimedia.__init__(self, duration)
+    def __init__(self, duration, name, artist):
+        Multimedia.__init__(self, duration, name)
+        self.__artist = artist
