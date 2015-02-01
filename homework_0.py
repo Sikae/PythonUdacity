@@ -39,13 +39,15 @@ class Movie(Multimedia):
     """
     TODO: ...
     """
-    def __init__(self, duration, name):
+    def __init__(self, duration, name, year):
         Multimedia.__init__(self, duration, name)
+        self.__year = year
     
 class Song(Multimedia):
     """
     TODO: ...
     """
-    def __init__(self, duration, name, artist):
+    def __init__(self, duration, name, artist, album):
         Multimedia.__init__(self, duration, name)
         self.__artist = artist
+        self.__album = album
